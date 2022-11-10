@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header,
+        article,
+        footer {
+            padding: 10px;
+            /* border:1px solid gray; */
+            justify-content: space-between;
+            flex-direction: column;
+            text-align: center;
+            margin: 5px;
+            border-radius: 15px;
+        }
+
+        header,
+        footer {
+            height: 60px;
+            background-color: rgb(212, 212, 212);
+        }
+
+        .main {
+            height: 420px;
+            background-color: rgb(236, 168, 202);
+            flex-wrap: wrap;
+        }
+
+        @media(min-width:760px) {
+            .col-body {
+                display: flex;
+            }
+        }
+
+        .col-body article {
+            flex-grow: 1;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .inner-body {
+            flex-basis: 80%;
+        }
+
+        .navbar {
+            background-color: khaki;
+            border-radius: 15px;
+            flex-basis: 20%;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* .navbar span{
+           padding: 10px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <span>Nav bar</span>
+        </div>
+        <div class="inner-body">
+            <header class="header">
+                <h1>Header</h1>
+            </header>
+            <div class="col-body">
+                <article class="main">
+                    column1
+                </article>
+                <article class="main">
+                    column2
+                </article>
+                <article class="main">
+                    column3
+                </article>
+            </div>
+            <footer class="footer">
+                <h1>Footer</h1>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<html>
+    <head>
+<style>
+a:link{
+    color: blueviolet;
+}
+a:visited{
+    color: chartreuse;
+}
+a:hover{
+    color: chocolate;
+}
+a:active{
+    color: darkgreen;
+}
+/* :first-child pseudo-class : first-child means immediatly after tag*/
+p:first-child{
+    color: blue;
+}
+li:first-child{
+    color:deepskyblue;
+}
+q:lang(no){
+    quotes: "~" " ~";
+}
+p:empty{
+    background-color: gold;
+    width:50px;
+    height: 50px;
+}
+input[type="text"]:enabled{
+background-color: gold;
+}
+input[type="text"]:disabled{
+    background-color:khaki;
+}
+input:in-range{
+    border : 2px solid violet;
+}
+input[type="text"]:invalid{
+    border:3px solid red;
+}
+</style>
+    </head>
+<body>
+    <input type="text" placeholder="enter username" min="5" max="10"/>
+    <input type="text" placeholder="enter password" disabled="disabled"/>
+    <p></p>
+    <p>first child<i> i tag</i></p>
+    <p>second child<i> i tag</i></p>
+    <ul>
+        <li>Style an element when a user mouses over it.</li>
+        <li>Style visited and unvisited links differently.</li>
+        <li>Style an element when it gets focus.</li>
+        
+    </ul>
+    <a href="default.asp">link</a>
+    
+    <span>Some text <q lang="no"> A quote in a paragraph </q> Some text.</span>
+
+</body>
+    </html>

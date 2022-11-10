@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /**Descendant Combinator:It’s worth noting that the .box element doesn’t have to be an immediate child: 
+        there could be another element wrapping .box, and the styles would still apply.
+        */
+       #container .box{
+           float: left;
+           padding: 15px;
+           background-color: brown;
+        }
+
+        /* Child Combinator: A selector that uses the child combinator is similar 
+        to a selector that uses a descendant combinator, except it only targets 
+        immediate child elements. */
+        /* #container> .box{
+           float: left;
+           padding: 15px;
+           background-color: brown;
+        } */
+
+        /*General Sibling Combinator:A selector that uses a general sibling combinator to match elements based on sibling relationships.
+         The selected elements are beside each other in the HTML.
+        */
+        /* h2 ~ p {
+	margin-bottom: 20px;
+    background-color: cadetblue;
+} */
+
+/* adjacent sibling combinator:
+same as the general sibling selector. 
+The difference is that the targeted element must be an immediate sibling,*/
+/* h2 + p {
+	margin-bottom: 20px;
+    background-color: cadetblue;
+} */
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box-1">box1</div>
+        <div>
+        <div class="box">box</div>
+         </div>
+    </div>
+    <h2>Title</h2>
+<p>Paragraph example1.</p>
+<p>Paragraph example2.
+    <div><p>Paragraph example2</p></div>
+</p>
+<p>Paragraph example3.</p>
+<div class=”box”>
+	<p>Paragraph example4.</p>
+	<p>Paragraph example5.</p>
+</div>
+</body>
+</html>

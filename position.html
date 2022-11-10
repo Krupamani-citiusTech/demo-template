@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            position: relative;
+            background-color: rgb(118, 118, 219);
+            padding: 10px;
+        }
+        .child-1{
+            padding: 10px;
+            background-color: rgb(104, 194, 104);
+            /* position: absolute; */
+            /* position: fixed; */ /*for fixing the position. It will not scroll with the page*/
+            position: sticky; /* it is stick to top of the page.  when you reach its scroll position*/
+            top:0px;
+           right:0px;
+        }
+        .child-2{
+            padding: 10px;
+            background-color: rgb(216, 140, 182);
+        }
+        .child-3{
+            padding: 10px;
+            background-color: rgb(240, 164, 136);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="parent">
+        Parent
+        <div class="child-1">
+        One
+        </div>
+        <div class="child-2">
+        Two
+        </div>
+        <div class="child-3">
+         Three
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- ref
+https://www.freecodecamp.org/news/css-positioning-position-absolute-and-relative/ -->

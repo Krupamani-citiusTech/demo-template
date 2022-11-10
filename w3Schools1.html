@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header, .col-body, .footer{
+            padding: 3px;
+            /* border:1px solid gray; */
+            justify-content: space-between;
+            flex-direction: column;
+            margin: 5px;
+            border-radius: 5px;
+        } 
+        .header{
+            position: relative;
+            background-color: MediumSeaGreen;
+            color: white;
+            border-radius: 5px;
+            height: 70px;
+        }
+        .footer {
+            height: 80px;
+            background-color: rgb(204, 197, 197);
+            font-size: small;
+        }
+        .col-body{
+            height: 420px;
+            display: flex;
+            flex-direction: row;
+        }
+         .button-cls{
+            padding: 3px 60px 3px 3px;
+            font-size: 15px;
+            margin: 4px;
+        }
+        .no-style{
+            padding: 3px 55px 3px 3px;  
+            margin: 4px;
+        }
+        .content a{ 
+        color: black;
+        }
+        .Side-bar{
+            background-color: DodgerBlue;
+            color: white;
+            padding:3px;
+            border-radius: 5px;
+            flex-basis: 20%;
+            font-size: 15px;
+            min-width: min-content;
+        }
+        .sub{
+            position: absolute;
+          top: 40px;
+        }
+        .content{
+            flex-basis: 50%;
+            min-width: min-content;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+        <h1>Welcome to My Homepage</h1>
+        <span class="sub">Use the menu to select different Stylesheets</span>
+    </div>
+    <div class="col-body">
+    <div class="Buttons">
+        <button class="button-cls">Stylesheet1</button> <br/>
+        <button class="button-cls">Stylesheet2</button><br/>
+        <button class="button-cls">Stylesheet3</button><br/>
+        <button class="button-cls">Stylesheet4</button><br>
+        <button class="no-style">No Stylesheet</button><br/>
+    </div>
+    <div class="content">
+      <h1>Same Page Different Stylesheets</h1>
+      <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. 
+          You can change the layout of this page by selecting different stylesheets in the menu, 
+          or by selecting one of the following links:</p>
+          <a href="#">Stylesheet1</a>,
+          <a href="#">Stylesheet2</a>,
+          <a href="#">Stylesheet3</a>,
+          <a href="#">Stylesheet4</a>,
+          <h2>No Styles</h2>
+          <p>
+            This page uses DIV elements to group different sections of the HTML page.
+             Click here to see how the page looks like with no stylesheet:
+          </p>
+          <a href="#">No Stylesheet</a>
+
+    </div>
+    <div class="Side-bar">
+        <h4>Side-bar</h4>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+             sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+    </div>
+    <footer class="footer">
+        <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+            vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum 
+            zzril delenit augue duis dolore te feugait nulla facilisi.
+        </p>
+    </footer>
+    </div>
+</body>
+</html>

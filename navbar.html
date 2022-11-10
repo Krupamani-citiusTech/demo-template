@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   header{
+       border : 3px solid gray;
+       /* border-width: 5px; */
+   }
+
+   .nav-list{
+       display: flex;
+       padding: 0px;
+       margin: 0px;
+       list-style: none;
+       flex-wrap: wrap;
+       justify-content: end;
+   }
+   .nav-list li{
+       border:2px solid red;
+       flex-shrink:1;
+        flex-grow: 1;/*if 1 align based on the box size */
+   }
+</style>
+<body>
+    <header>
+    <nav>
+    <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Information goes here</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+</header>
+</body>
+</html>

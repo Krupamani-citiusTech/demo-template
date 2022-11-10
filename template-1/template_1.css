@@ -1,0 +1,61 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x:hidden;
+}
+.header{
+    background-color: black;
+    color: white;
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+}
+.header ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 28px;
+    
+}
+.header li{
+    flex:auto;
+    list-style: none;
+}
+/* .header-items{
+    margin: 0 2px;
+} */
+.header-img{
+    background-position: center;
+    background-size: cover;
+    background-image: url("./coffeehouse.jpg");
+    height: 80vh;
+}
+.about-cafe{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 100px 320px;
+}
+.body-items{
+    background-color: wheat;
+    /* display: flex; */
+    /* justify-content: center; */
+    left:50px;
+    right: 50px;
+    position: absolute;
+    align-content: center;
+}
+.sub-image{
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://www.w3schools.com/w3images/coffeeshop.jpg");
+    height: 80vh;
+}

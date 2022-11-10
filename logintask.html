@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 225px 350px 350px;
+            grid-template-rows: 60px 220px 300px 60px;
+            justify-content: center;
+        }
+        .header, .sidebar, .navigation, .adds, .main, .footer{
+        border:3px solid rgb(250, 97, 97);
+        margin: 3px;
+            border-radius: 5px;
+            text-align: center;
+            /* font-size: 10px; */
+            padding:10px;
+        }
+        .header{
+        height: 30px;
+        /* grid-column-start: 1;
+        grid-column-end: 4; */
+        grid-column: 1 / 4;
+        }
+        .sidebar{
+            /* grid-row-start: 2;
+            grid-row-end: 4; */
+            grid-row:2 / 4
+        }
+        .navigation{
+            /* grid-column-start: 2;
+            grid-column-end: 3; */
+            grid-column: 2 / 3;
+        }
+        .adds{
+            grid-column-start: 3;
+            grid-row-start: 2;
+            grid-row-end:4;
+        }
+        .footer{
+            grid-column-start: 1;
+            grid-column-end:4 ;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <div class="header">Header</div>
+    <div class="sidebar">SideBar</div>
+    <div>
+    <div class="navigation">Navigation</div>
+    <div class="adds">adds</div>
+    <div class="main">main</div>
+   </div>
+    <div class="profile">Profile</div>
+    <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

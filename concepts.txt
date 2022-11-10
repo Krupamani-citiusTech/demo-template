@@ -1,0 +1,50 @@
+*{
+margin : 0;
+padding : 0;
+box-sizing : 
+}
+body, html {
+height:100vh;
+width:100vw;
+}
+flex-basis--->alternative of width
+
+display:flex
+align-items:center;
+justify : center--->vertical
+
+
+for moblie
+360--min
+740--max
+
+box-model
+flex
+display
+
+z-index -- override the object
+
+vh--horizantal
+vw---vertical
+
+
+
+padding same as the background-color
+margin - always transparent
+border - you pick the color
+
+
+-----------------Channel------------
+***Steve Griffith - Prof3ssorSt3v3
+-----------------Grid-Reference-------------------
+*** https://www.freecodecamp.org/news/learn-css-grid-in-5-minutes-f582e87b1228/
+
+*** https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+
+#justify-content: space-evenly;The value "space-evenly" will give the columns equal amount of space between, and around them
+
+dispay:grid;                   width
+gap:1.5rem;                     |
+grid-template-columns:repeat(4,1fr) ---->explicitly
+                              |
+                             4 columns

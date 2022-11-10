@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media(min-width:760px){
+            .container-1{
+            display: flex;
+            /* align-items: flex-start;
+             flex-direction: column; */
+           
+        }
+        .container-2 {
+          
+           display: flex; 
+           /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: center; */
+            justify-content: space-between;
+        }
+        }
+        
+        .container-2 div {
+            flex-basis: 30%;
+            /*if width:0 it will goes width 0
+            if flex-basis:0 it will arrange min width of the box like min-content*/
+            flex-wrap:wrap;
+        }
+        .container-1 div,  .container-2 div {
+            
+            border : 1px solid gray;
+            padding: 10px;
+            
+        }
+        .box-1{
+        flex:1;
+        order:2
+        }
+        .box-2{
+            flex:1;
+            order:1
+        }
+        .box-3{
+            flex:1;
+            order:3
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container-1">
+        <div>
+            <h2>Box-1</h2>
+        <p class="box-1">
+            The CSS box model is essentially a box that wraps around every HTML element. 
+            It consists of: margins, borders, padding, and the actual content. 
+            The image below illustrates the box model
+        </p>
+    </div>
+    <div>
+        <h2>Box-2</h2>
+        <p class="box-2">
+            In order to set the width and height of an element correctly in all browsers, 
+            you need to know how the box model works.
+        </p>
+    </div>
+    <div>
+        <h2>Box-3</h2>
+        <p class="box-3">
+            <strong>Important:</strong> When you set the width and height properties of an element with CSS,
+             you just set the width and height of the content area. 
+             To calculate the full size of an element, you must also add padding, 
+             borders and margins.
+        </p>
+    </div>
+    </div> 
+    <div class="container-2">
+        <div>
+            <h2>Box-4</h2>
+        <p class="box-4">
+            The CSS box model is essentially a box that wraps around every HTML element. 
+            It consists of: margins, borders, padding, and the actual content. 
+            The image below illustrates the box model
+        </p>
+    </div>
+    <div>
+        <h2>Box-5</h2>
+        <p class="box-5">
+            In order to set the width and height of an element correctly in all browsers, 
+            you need to know how the box model works.
+        </p>
+    </div>
+    <div>
+        <h2>Box-5</h2>
+        <p class="box-5">
+            <strong>Important:</strong> When you set the width and height properties of an element with CSS,
+             you just set the width and height of the content area. 
+             To calculate the full size of an element, you must also add padding, 
+             borders and margins.
+        </p>
+    </div>
+    </div> 
+</body>
+</html>

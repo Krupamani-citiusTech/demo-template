@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title,.subtitle{
+            margin-left: 13px;
+            
+        }
+        .blog-titles{
+            text-align: center;
+        }
+        
+        .card-1,.card-2,.card-3,.card-4,.card-5{
+            width:min-content;
+            padding: 10px;
+            box-shadow: 5px 10px 18px #888888;
+        }
+        .card-2{
+            height: 75%;
+            grid-column-start: 2;
+            grid-column-end: 3;
+           
+        }
+        .card-3{
+             margin-top:50px; 
+            width:min-content; 
+         
+        }
+        .cards{
+            display: grid;
+        }
+        .card-4{
+            width:65%;
+            height: 69%
+        }
+        .Lorem{
+            float: left;
+            width: 50px;
+        }
+        .un-lists{
+            list-style: none;
+        }
+        .popular-posts, .tags{
+         margin:30px;
+        }   
+        .card-5{
+            /* background-color: indianred; */
+            /* margin-top: 50px; */
+            float:right;
+            width: 22%;
+            margin-right: 130px;
+            clear:both
+        }
+        .tag-names{
+            background-color: rgb(223, 213, 213);
+            display: inline-block;
+            margin-bottom: 16px!important
+        }
+        .tag-names1{
+            color: white;
+            background-color: black;
+            margin-bottom: 16px!important
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="blog-titles">
+        <h1><b>MY BLOG</b></h1>
+        <span>Welcome to the blog of unknown</span>
+    </div>
+    <div class="cards">
+    <div class="card-1">
+        <img src="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/img_woods.jpg">
+        <h3><b>TITLE HEADING</b></h3>
+        <h5>Title description, <span>April 7, 2014</span></h5>
+        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl.
+             Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. 
+             Phasellus sed ultricies mi non congue ullam corper.
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+               ultricies congue gravida diam non fringilla.</p>
+               <button>READ MORE »</button>
+               <p><span><b>Comments  </b> <span>0</span></span></p>
+    </div>
+    <div class="card-2">
+        <img src="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/img_avatar_g.jpg" alt="">
+        <h4><b>My Name</b></h4>
+        <p>Just me, myself and I, exploring the universe of uknownment.
+             I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. 
+            I want to share my world with you.</p>
+    </div>
+    <div class="card-3">
+        <img src="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/img_bridge.jpg">
+        <h3><b>BLOG ENTRY</b></h3>
+        <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
+        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. 
+            Sed mattis nunc id lorem euismod placerat. 
+            Vivamus porttitor magna enim, ac accumsan tortor cursus at.
+             Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum.
+              Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+              <p><button><b>READ MORE »</b></button>
+                <p><span><b>Comments  </b> <span>2</span></span></p>
+    </div>
+    <div class="card-4">
+        <h4 class="popular-posts">Popular Posts</h4><hr/>
+        <ul class="un-lists">
+        <li class="lists-1">
+        <img class="Lorem"src="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/img_workshop.jpg">
+        <span class="title">Lorem</span><br>
+        <span class="subtitle">Sed mattis nunc</span>
+        <br/><br/>
+    </li><hr/>
+    <li class="lists-2">
+        <img class="Lorem"src="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/img_gondol.jpg">
+        <span class="title">Ipsum</span><br>
+        <span class="subtitle">Praes tinci sed</span><br/><br/>
+    </li><hr/>
+    <li class="lists-3">
+        <img class="Lorem"src="	http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/img_skies.jpg">
+        <span class="title">Dorum</span><br>
+        <span class="subtitle">Ultricies congue</span><br/><br/>
+    </li><hr/>
+    <li class="lists-4">
+        <img class="Lorem"src="	http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/img_rock.jpg">
+        <span class="title">Mingsum</span><br>
+        <span class="subtitle">Lorem ipsum dipsum</span><br/><br/>
+    </li>
+       </ul>
+    </div>
+    <hr/>
+</div>
+<div class="card-5">
+    <h4 class="tags">Tags</h4><hr/>
+    <p>
+        <span class="tag-names1">Travel</span>
+        <span class="tag-names">New York</span>
+        <span class="tag-names">London</span>
+        <span class="tag-names">IKEA</span>
+        <span class="tag-names">NORWAY</span>
+        <span class="tag-names">DIY</span>
+        <span class="tag-names">Ideas</span>
+        <span class="tag-names">Baby</span>
+        <span class="tag-names">Family</span>
+        <span class="tag-names">News</span>
+        <span class="tag-names">Clothing</span>
+        <span class="tag-names">Shopping</span>
+        <span class="tag-names">Sports</span>
+        <span class="tag-names">Games</span>
+    </p>
+</div>
+    </div>
+</body>
+</html>
